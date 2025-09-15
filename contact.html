@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Ziqi Lin | Contact</title>
+  <meta name="description" content="Contact — Ziqi Lin. MS in Information Systems at UMD. Clean UI, Bootstrap, Streamlit demos." />
+
+  <!-- 1) Bootstrap CSS first so your custom CSS can override it -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  
+  <!-- 2) Your CSS for this page 
+       If your files are named differently, change the paths below accordingly. -->
+  <link rel="stylesheet" href="css/vars3.css" />
+  <link rel="stylesheet" href="css/style3.css" />
+
+  <!-- Minimal safe reset -->
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    img { max-width: 100%; height: auto; }
+  </style>
+</head>
+<body>
+
+<!-- Keep your original wrapper and classes -->
+<div class="contact">
+
+  <!-- Background image block; keep inline styles, add accessibility attributes -->
+  <div
+    class="image"
+    role="img"
+    aria-label="Contact hero background"
+    style="
+      background: url(image0.png) center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    "
+  >
+    <img
+      class="contact-image"
+      src="/images/contact.png"
+      alt="Overlay portrait"
+    />
+  </div>
+
+  <!-- Intro copy kept intact -->
+  <div class="copy">
+    <div class="contact2">Contact</div>
+    <div class="i-m-an-ms-in-information-systems-student-at-the-university-of-maryland-who-turns-clear-interface-ideas-from-figma-into-semantic-responsive-web-pages-with-html-css-and-bootstrap">
+      I’m an MS in Information Systems student at the University of Maryland who
+      turns clear interface ideas from Figma into semantic, responsive web pages
+      with HTML, CSS, and Bootstrap.
+    </div>
+    <div class="paragraph">
+      Beyond the UI, I connect pages to lightweight data and automation
+      layers—shipping quickly with GitHub Pages or Netlify and building demo
+      apps with Python and Streamlit. Recent work includes Meeting Emotion
+      Analysis, a multimodal demo that combines VGGNet for facial emotion, a
+      fine-tuned RoBERTa for text emotion, and an LLM for meeting-level
+      summaries; and an AI-assisted CRM prototype that streamlines forms, email,
+      and scheduling workflows.
+      <br /><br />
+      If this resonates with you, I’d be happy to connect.
+    </div>
+  </div>
+
+  <!-- ===== NAV AREA (minimal change): make links clickable, keep layout/classes ===== -->
+  <nav class="navigation" role="navigation" aria-label="Main">
+    <div class="items">
+      <div class="page">Page</div>
+      <div class="page">Page</div>
+      <div class="page">Page</div>
+      <!-- Make the button real; here it opens email. Change to any URL if needed. -->
+      <a class="button btn btn-primary" href="mailto:ziqi1229@umd.edu" role="button">
+        <span class="button2">Button</span>
+      </a>
+    </div>
+
+    <div class="site-name">Site name</div>
+
+    <div class="navigation2">
+      <div class="items">
+        <a class="home" href="index.html">Home</a>
+        <a class="about" href="about.html">About</a>
+        <a class="contact3" href="contact.html" aria-current="page">Contact</a>
+      </div>
+      <div class="ziqi-lin">Ziqi Lin</div>
+    </div>
+  </nav>
+</div>
+
+<!-- Bootstrap JS bundle at the end (required for collapsible nav if you add it later) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
